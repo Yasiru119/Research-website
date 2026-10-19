@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Milestones | AutoLearnAR Project Assessments</title>
+  <meta name="description" content="Project milestones and assessment schedule for AutoLearnAR: Proposal, Progress Presentations 1 & 2, Final Assessment, and Viva Voce with mark allocations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Institutional Bar -->
+  <aside class="institution-bar" aria-label="Institutional Affiliation">
+    <span>Department of Information Technology &bull; Faculty of Computing &bull; SLIIT</span>
+    <span>Comprehensive Design & Analysis Project (CDAP)</span>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="top">
+    <a class="brand-wrapper" href="index.html">
+      <div class="brand-logo-icon">AR</div>
+      <div class="brand-name">AutoLearn<b>AR</b></div>
+    </a>
+    <nav aria-label="Main Navigation">
+      <a href="index.html">Home</a>
+      <a href="domain.html">Domain</a>
+      <a href="milestones.html" aria-current="page">Milestones</a>
+      <a href="documents.html">Documents</a>
+      <a href="slides.html">Slides</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Project Milestones & Assessment Tracking</h1>
+    <p class="lead">
+      Academic assessment roadmap, deliverable evaluation criteria, and mark distribution prescribed by the SLIIT Department of Information Technology for CDAP 2026.
+    </p>
+
+    <!-- Interactive Dropdown Section (Mandatory from Slide 11) -->
+    <div class="interactive-panel">
+      <div class="form-group">
+        <label for="ms">Select Academic Assessment Milestone:</label>
+        <select id="ms" aria-label="Select Project Assessment"></select>
+      </div>
+
+      <!-- Rendered details container -->
+      <div id="msout" aria-live="polite">
+        <!-- Rendered via js/main.js -->
+      </div>
+    </div>
+
+    <!-- Complete Milestone Summary Table -->
+    <section>
+      <h2>Comprehensive Assessment Schedule</h2>
+      <p>Formal academic evaluation milestones and curriculum weightages for the research project:</p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Assessment Milestone</th>
+              <th>Academic Timeline</th>
+              <th>Weightage / Marks</th>
+              <th>Evaluation Status</th>
+              <th>Primary Focus & Key Deliverables</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Project Proposal</strong></td>
+              <td>March 2026</td>
+              <td><strong>6%</strong></td>
+              <td><span class="badge badge-done">Completed</span></td>
+              <td>Project Charter, research problem defense, preliminary literature survey, and concept pitch.</td>
+            </tr>
+            <tr>
+              <td><strong>2. Progress Presentation 1 (PP1)</strong></td>
+              <td>May 2026</td>
+              <td><strong>15%</strong></td>
+              <td><span class="badge badge-done">Completed</span></td>
+              <td>50% component implementation review, dataset collection, MobileNetV2 training, initial AR pipeline.</td>
+            </tr>
+            <tr>
+              <td><strong>3. Progress Presentation 2 (PP2)</strong></td>
+              <td>August 2026</td>
+              <td><strong>18%</strong></td>
+              <td><span class="badge badge-done">Completed</span></td>
+              <td>90% implementation, cross-subsystem integration, initial testing on Suzuki Alto 800L engine bay.</td>
+            </tr>
+            <tr>
+              <td><strong>4. Final Assessment & Demo</strong></td>
+              <td>October 2026</td>
+              <td><strong>45%</strong> <span style="font-size:0.8rem; color:var(--text-muted);">(25% Demo + 20% Report)</span></td>
+              <td><span class="badge badge-done">Completed</span></td>
+              <td>Full physical system demonstration, instructor score correlation, Common Report & Individual Theses.</td>
+            </tr>
+            <tr>
+              <td><strong>5. Viva Voce Examination</strong></td>
+              <td>November 2026</td>
+              <td><strong>16%</strong></td>
+              <td><span class="badge badge-progress">Scheduled</span></td>
+              <td>Individual oral defense before faculty and external examination panels.</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr style="background-color: var(--bg-subtle); font-weight: 600;">
+              <td colspan="2">Total Academic Coursework Allocation</td>
+              <td style="color: var(--color-primary); font-size: 1.05rem;">100%</td>
+              <td colspan="2" style="font-size: 0.85rem; color: var(--text-muted);">SLIIT CDAP Evaluation Framework</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><b>AutoLearnAR</b> &mdash; AR-Based Intelligent Automobile Repair Learning & Evaluation System</p>
+    <p>Department of Information Technology &bull; Faculty of Computing &bull; Sri Lanka Institute of Information Technology (SLIIT) &bull; 2026</p>
+    <p style="font-size: 0.78rem; color: #94a3b8; margin-top: 0.5rem;">Academic Research Deliverable for Comprehensive Design & Analysis Project (CDAP)</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

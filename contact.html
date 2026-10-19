@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | AutoLearnAR Research Inquiries</title>
+  <meta name="description" content="Contact the AutoLearnAR research team at SLIIT for academic inquiries, replication details, system demonstrations, and research collaboration.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Institutional Bar -->
+  <aside class="institution-bar" aria-label="Institutional Affiliation">
+    <span>Department of Information Technology &bull; Faculty of Computing &bull; SLIIT</span>
+    <span>Comprehensive Design & Analysis Project (CDAP)</span>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="top">
+    <a class="brand-wrapper" href="index.html">
+      <div class="brand-logo-icon">AR</div>
+      <div class="brand-name">AutoLearn<b>AR</b></div>
+    </a>
+    <nav aria-label="Main Navigation">
+      <a href="index.html">Home</a>
+      <a href="domain.html">Domain</a>
+      <a href="milestones.html">Milestones</a>
+      <a href="documents.html">Documents</a>
+      <a href="slides.html">Slides</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" aria-current="page">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Academic Contact & Inquiries</h1>
+    <p class="lead">
+      Inquiries regarding the AutoLearnAR system, evaluation dataset, experimental replication methodology, or academic demonstrations are welcomed by the research team.
+    </p>
+
+    <!-- General Contact Information (Slide 15 Criteria) -->
+    <div class="supervisor-grid">
+      <div class="supervisor-card">
+        <h4>Departmental & Research Contact</h4>
+        <div class="supervisor-role">Primary Inquiries</div>
+        <div class="supervisor-affiliation">
+          <p style="margin-bottom: 0.35rem;"><strong>Team Email:</strong> <a href="mailto:autolearnar.cdap@gmail.com">autolearnar.cdap@gmail.com</a></p>
+          <p style="margin-bottom: 0.35rem;"><strong>Lead Researcher:</strong> <a href="mailto:it22284570@my.sliit.lk">it22284570@my.sliit.lk</a></p>
+          <p style="margin-bottom: 0;"><strong>Faculty Telephone:</strong> +94 (11) 754 4806</p>
+        </div>
+      </div>
+
+      <div class="supervisor-card">
+        <h4>Institutional Affiliation</h4>
+        <div class="supervisor-role">Faculty of Computing, SLIIT</div>
+        <div class="supervisor-affiliation">
+          <p style="margin-bottom: 0.35rem;">Department of Information Technology</p>
+          <p style="margin-bottom: 0;">Sri Lanka Institute of Information Technology (SLIIT)<br>New Kandy Road, Malabe 10115, Sri Lanka.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- General E-mail Template (Slide 15 Criteria) -->
+    <section>
+      <h2>General E-mail Inquiry Template</h2>
+      <p>
+        Complete the form below to auto-generate a structured email message. Clicking "Open in Email Application" will launch your system's default email client with all details pre-populated.
+      </p>
+
+      <div class="interactive-panel" style="max-width: 680px;">
+        <div class="form-group">
+          <label for="n">Your Full Name / Title</label>
+          <input id="n" type="text" placeholder="e.g. Dr. Jane Smith / Examiner" required>
+        </div>
+
+        <div class="form-group">
+          <label for="s">Subject Line</label>
+          <input id="s" type="text" value="Academic Inquiry Regarding AutoLearnAR Research System">
+        </div>
+
+        <div class="form-group">
+          <label for="m">Message Content</label>
+          <textarea id="m" rows="8">Dear AutoLearnAR Research Team,
+
+I am contacting you regarding your research on "AR-Based Intelligent Automobile Repair Learning & Evaluation System".
+
+I would like to inquire regarding:
+- [ ] Research methodology, model architecture, or dataset specifications
+- [ ] System demonstration schedule or evaluation trial verification
+- [ ] Academic collaboration or technical review
+
+Thank you.
+
+Best regards,
+</textarea>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <button class="btn btn-primary" id="send" type="button">Open in Email Application &rarr;</button>
+          <button class="btn btn-outline" id="copy-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('m').value); alert('Template copied to clipboard.');">Copy Text</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><b>AutoLearnAR</b> &mdash; AR-Based Intelligent Automobile Repair Learning & Evaluation System</p>
+    <p>Department of Information Technology &bull; Faculty of Computing &bull; Sri Lanka Institute of Information Technology (SLIIT) &bull; 2026</p>
+    <p style="font-size: 0.78rem; color: #94a3b8; margin-top: 0.5rem;">Academic Research Deliverable for Comprehensive Design & Analysis Project (CDAP)</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

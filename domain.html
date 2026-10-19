@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Domain | AutoLearnAR Research Specification</title>
+  <meta name="description" content="Research domain of AutoLearnAR: Comprehensive literature survey, research gap analysis, problem formulation, objectives, methodology, and technology stack.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Institutional Bar -->
+  <aside class="institution-bar" aria-label="Institutional Affiliation">
+    <span>Department of Information Technology &bull; Faculty of Computing &bull; SLIIT</span>
+    <span>Comprehensive Design & Analysis Project (CDAP)</span>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="top">
+    <a class="brand-wrapper" href="index.html">
+      <div class="brand-logo-icon">AR</div>
+      <div class="brand-name">AutoLearn<b>AR</b></div>
+    </a>
+    <nav aria-label="Main Navigation">
+      <a href="index.html">Home</a>
+      <a href="domain.html" aria-current="page">Domain</a>
+      <a href="milestones.html">Milestones</a>
+      <a href="documents.html">Documents</a>
+      <a href="slides.html">Slides</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Research Domain & Technical Foundation</h1>
+    <p class="lead">
+      Academic framework, literature review, problem formulation, and methodological design underpinning the AutoLearnAR intelligent vocational guidance system.
+    </p>
+
+    <!-- Sub Navigation for Domain Sections (Slide 10 Criteria) -->
+    <nav class="sub-nav" aria-label="Domain Section Directory">
+      <a href="#survey">1. Literature Survey</a>
+      <a href="#gap">2. Research Gap</a>
+      <a href="#problem">3. Research Problem</a>
+      <a href="#objectives">4. Research Objectives</a>
+      <a href="#method">5. Methodology</a>
+      <a href="#tech">6. Technologies Used</a>
+      <a href="#refs">References</a>
+    </nav>
+
+    <!-- 1. Literature Survey -->
+    <section id="survey">
+      <h2>1. Literature Survey</h2>
+      <p>
+        An extensive review of automotive technical instruction and digital pedagogical systems reveals three prevailing educational paradigms:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Instructional Paradigm</th>
+              <th>Current Strengths</th>
+              <th>Observed Limitations in Practical Training</th>
+              <th>Key Citations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Traditional Manuals & 1-on-1 Mentorship</strong></td>
+              <td>Direct tactile feedback, high instructor accuracy, established vocational accreditation.</td>
+              <td>Severe instructor scalability limits (&gt;1:10 trainee ratio), divided visual attention looking away from the engine bay, and late hazard intervention.</td>
+              <td>Brooke [4], ISO 26262 [5]</td>
+            </tr>
+            <tr>
+              <td><strong>Passive Digital Courseware (2D / Video)</strong></td>
+              <td>Scales to arbitrary student cohort sizes, accessible on budget consumer hardware.</td>
+              <td>Lack of spatial 3D context, inability to verify physical execution or torque specifications, and absence of active hazard mitigation.</td>
+              <td>Radu [6]</td>
+            </tr>
+            <tr>
+              <td><strong>Enterprise Optical Headsets (HMDs)</strong></td>
+              <td>Hands-free immersion, high-precision spatial SLAM anchors, advanced telepresence.</td>
+              <td>Prohibitive hardware expenditure ($3,500+ per unit), fragile hardware unsuitable for grease/heat, and heavy dependency on high-bandwidth cloud infrastructure.</td>
+              <td>Sandler et al. [1], TFLite [2]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="abstract-box">
+        <h3>Theoretical Synthesis</h3>
+        <p>
+          The proposed AutoLearnAR framework addresses these trade-offs by utilizing quantized convolutional networks (MobileNetV2 [1]) on embedded edge hardware (TensorFlow Lite [2]) via the Android CameraX pipeline [3]. Practical viability is verified using standardized usability scales (SUS [4]) and functional safety containment principles aligned with automotive standards [5].
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Research Gap -->
+    <section id="gap">
+      <h2>2. Research Gap</h2>
+      <p>
+        While augmented reality has been implemented in dedicated industrial manufacturing plants, there exists a critical gap in <strong>offline, smartphone-based digital supervisors</strong> capable of autonomously guiding, verifying physical steps, and grading novice technicians on commodity mobile hardware without external servers.
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>System Architecture</th>
+              <th>Hardware Barrier</th>
+              <th>Step Verification Mechanism</th>
+              <th>Hazard Alert Latency</th>
+              <th>Network Independence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Printed / Video Manuals</strong></td>
+              <td>Low cost</td>
+              <td>None (Passive observation)</td>
+              <td>Manual intervention only</td>
+              <td>Fully offline</td>
+            </tr>
+            <tr>
+              <td><strong>Cloud-Based Enterprise AR</strong></td>
+              <td>High ($3,500+ Headset)</td>
+              <td>Cloud-dependent inference</td>
+              <td>Delayed (1.2s &ndash; 2.5s)</td>
+              <td>Requires continuous Wi-Fi/5G</td>
+            </tr>
+            <tr>
+              <td><strong>AutoLearnAR (This Project)</strong></td>
+              <td><strong>Low ($100 Phone)</strong></td>
+              <td><strong>On-Device 3s Hold Loop</strong></td>
+              <td><strong>Instant (~120 ms)</strong></td>
+              <td><strong>100% On-Device / Offline</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 3. Research Problem -->
+    <section id="problem">
+      <h2>3. Research Problem Formulation</h2>
+      <p>
+        Automotive vocational training lacks an objective, proactive supervisory mechanism that scales without inflating instructor costs or compromising student safety. Instructors cannot simultaneously monitor multiple trainees working on active engines, leading to subjective evaluation and delayed hazard interception.
+      </p>
+      <p>This central challenge is divided into four interdependent subproblems:</p>
+
+      <div class="pillar-grid">
+        <div class="pillar-card">
+          <div class="pillar-number">Subproblem 01</div>
+          <h3>Markerless Visual Context</h3>
+          <p>Classifying tightly packed and occluded engine parts without physical QR or fiducial markers under non-uniform workshop lighting.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-number">Subproblem 02</div>
+          <h3>Procedural Task Mapping</h3>
+          <p>Mapping identified mechanical components to ordered assembly graphs and tracking student progression across state transitions.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-number">Subproblem 03</div>
+          <h3>Spatial AR Step Verification</h3>
+          <p>Projecting 3D directional cues onto physical engine components and verifying completion through a smartphone display without headsets.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-number">Subproblem 04</div>
+          <h3>Automated Safety & Scoring</h3>
+          <p>Detecting tool interactions in hazardous proximity zones and calculating an objective 100-point performance score from execution telemetry.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Research Objectives -->
+    <section id="objectives">
+      <h2>4. Research Objectives</h2>
+      <p>
+        <strong>Primary Aim:</strong> To architect, develop, and empirically validate an offline-first, smartphone-based augmented reality learning and evaluation platform that delivers real-time guidance, step verification, hazard prevention, and objective grading for automotive repair education.
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Component & Researcher</th>
+              <th>Specific Research Objective</th>
+              <th>Target Baseline</th>
+              <th>Empirically Achieved Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Component 01: Identification</strong><br><span style="font-size:0.8rem; color:var(--text-muted);">Senevirathne S.D</span></td>
+              <td>Quantize and deploy an on-device computer vision pipeline to recognize automotive parts marker-free.</td>
+              <td>&gt; 80% Top-1 Confidence</td>
+              <td><strong>&gt; 88% Mean Confidence</strong> under variable illumination.</td>
+            </tr>
+            <tr>
+              <td><strong>Component 02: Task Recognition</strong><br><span style="font-size:0.8rem; color:var(--text-muted);">Jayalath S.P.S.C.K</span></td>
+              <td>Develop local procedural workflow database and state engine to track repair progression.</td>
+              <td>100% Retrieval Accuracy</td>
+              <td><strong>100% Deterministic State Mapping</strong> across multi-step procedures.</td>
+            </tr>
+            <tr>
+              <td><strong>Component 03: AR Verification</strong><br><span style="font-size:0.8rem; color:var(--text-muted);">Weerakoon Y.P.B.</span></td>
+              <td>Develop spatial 3D perspective projection, voice guidance, and a temporal 3-second hold verification loop.</td>
+              <td>&gt; 24 FPS AR Canvas</td>
+              <td><strong>26&ndash;30 FPS</strong> sustained rendering; <strong>SUS 76.5</strong> usability rating.</td>
+            </tr>
+            <tr>
+              <td><strong>Component 04: Safety & Scoring</strong><br><span style="font-size:0.8rem; color:var(--text-muted);">Leelananda M.P.D.R.I</span></td>
+              <td>Formulate deterministic safety rule matrices and a multi-factorial automated scoring engine.</td>
+              <td>Strong Instructor Correlation</td>
+              <td><strong>89% Correlation</strong> with certified automotive master instructors.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 5. Methodology -->
+    <section id="method">
+      <h2>5. Research Methodology</h2>
+      <p>
+        The development followed an agile, component-driven engineering methodology executed over four bi-weekly sprints. Testing was conducted on a physical <strong>Suzuki Alto 800L</strong> vehicle testbed.
+      </p>
+
+      <div class="abstract-box">
+        <h3>End-to-End Execution Sequence</h3>
+        <ol style="padding-left: 1.25rem; font-size: 0.95rem; line-height: 1.75; color: var(--text-body);">
+          <li><strong>Image Frame Acquisition:</strong> CameraX captures continuous camera frames at 30 FPS with zero memory duplication.</li>
+          <li><strong>Edge Machine Learning Inference:</strong> Quantized MobileNetV2 (TFLite) predicts component classification and passes validated <code>componentId</code>.</li>
+          <li><strong>Workflow Instantiation:</strong> State manager retrieves the corresponding task graph and establishes active sub-step targets.</li>
+          <li><strong>Spatial 3D Projection:</strong> The AR Canvas projects directional vectors and highlights target regions while Android TextToSpeech generates audio instructions.</li>
+          <li><strong>Temporal Hold Verification:</strong> A continuous 3-second visual fixation window confirms step completion without screen taps.</li>
+          <li><strong>Safety Interception:</strong> The safety evaluation engine evaluates tool proximity and spatial forbidden zones, triggering urgent audio/visual alerts (~120ms).</li>
+          <li><strong>Performance Synthesis:</strong> Telemetry metrics (completion latency, error counts, retry penalties) are synthesized into a 100-point score stored locally in SharedPreferences/JSON.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 6. Technologies Used -->
+    <section id="tech">
+      <h2>6. Technologies & Tools Used</h2>
+      <p>
+        Technology choices were constrained by the requirement for complete on-device autonomy and real-time execution on entry-level Android devices:
+      </p>
+
+      <div class="pillar-grid">
+        <div class="pillar-card">
+          <div class="tech-category-title">Mobile Runtime & Application</div>
+          <ul class="chips">
+            <li>Kotlin 2.0</li>
+            <li>Jetpack Compose</li>
+            <li>Coroutines & Flow</li>
+            <li>Android CameraX 1.4</li>
+            <li>Android SDK 35 (Android 15)</li>
+            <li>TextToSpeech API</li>
+          </ul>
+        </div>
+
+        <div class="pillar-card">
+          <div class="tech-category-title">Machine Learning & Computer Vision</div>
+          <ul class="chips">
+            <li>TensorFlow Lite 2.16</li>
+            <li>TFLite Support Library</li>
+            <li>MobileNetV2 (Quantized INT8)</li>
+            <li>OpenCV Mobile</li>
+            <li>Google Colab GPU (Training)</li>
+          </ul>
+        </div>
+
+        <div class="pillar-card">
+          <div class="tech-category-title">Architecture & Data Persistence</div>
+          <ul class="chips">
+            <li>Clean Architecture (MVVM)</li>
+            <li>Room Database 2.6</li>
+            <li>Google Gson</li>
+            <li>SharedPreferences</li>
+            <li>Git & GitHub Actions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- References -->
+    <section id="refs">
+      <h2>References</h2>
+      <ol class="references-list">
+        <li>M. Sandler, A. Howard, M. Menglong, A. Zhmoginov, and L.-C. Chen, "MobileNetV2: Inverted Residuals and Linear Bottlenecks," in <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2018, pp. 4510&ndash;4520.</li>
+        <li>Google, "TensorFlow Lite: High-performance on-device machine learning for mobile and edge devices," Google Developers, 2024. [Online]. Available: https://tensorflow.org/lite</li>
+        <li>Android Developers, "CameraX Architecture and Camera2 Interoperability Guidelines," Google, 2024. [Online]. Available: https://developer.android.com/training/camerax</li>
+        <li>J. Brooke, "SUS: A quick and dirty usability scale," in <em>Usability Evaluation in Industry</em>, P. W. Jordan, B. Thomas, I. L. McClelland, and B. Weerdmeester, Eds. London: Taylor & Francis, 1996, pp. 189&ndash;194.</li>
+        <li>International Organization for Standardization, "ISO 26262-1:2018: Road vehicles &mdash; Functional safety," ISO Standards, Geneva, Switzerland, 2018.</li>
+        <li>I. Radu, "Augmented reality in education: a meta-review and cross-media analysis," <em>Personal and Ubiquitous Computing</em>, vol. 18, no. 6, pp. 1533&ndash;1543, 2014.</li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><b>AutoLearnAR</b> &mdash; AR-Based Intelligent Automobile Repair Learning & Evaluation System</p>
+    <p>Department of Information Technology &bull; Faculty of Computing &bull; Sri Lanka Institute of Information Technology (SLIIT) &bull; 2026</p>
+    <p style="font-size: 0.78rem; color: #94a3b8; margin-top: 0.5rem;">Academic Research Deliverable for Comprehensive Design & Analysis Project (CDAP)</p>
+  </footer>
+</body>
+</html>
