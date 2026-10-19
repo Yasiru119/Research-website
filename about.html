@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Us | AutoLearnAR Research Team & Supervisors</title>
-  <meta name="description" content="AutoLearnAR research team: Final-year BSc (Hons) Information Technology undergraduates and faculty supervisors at the Sri Lanka Institute of Information Technology (SLIIT).">
+  <meta name="description"
+    content="AutoLearnAR research team: Final-year BSc (Hons) Information Technology undergraduates and faculty supervisors at the Sri Lanka Institute of Information Technology (SLIIT).">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .researcher-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top center;
+      border: 3px solid var(--border-subtle);
+      display: block;
+      margin: 0 auto 1rem auto;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.10);
+      background-color: var(--bg-muted);
+    }
+    .researcher-card {
+      text-align: center;
+    }
+    .researcher-card .researcher-role,
+    .researcher-card .researcher-tasks,
+    .researcher-card .researcher-contact {
+      text-align: left;
+    }
+    .researcher-card h3 {
+      text-align: center;
+    }
+    .researcher-card .researcher-id {
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
   <!-- Institutional Bar -->
   <aside class="institution-bar" aria-label="Institutional Affiliation">
@@ -37,7 +68,8 @@
   <main>
     <h1>Research Team & Supervisors</h1>
     <p class="lead">
-      Undergraduate researchers in the Department of Information Technology, Faculty of Computing, Sri Lanka Institute of Information Technology (SLIIT), working under faculty supervision.
+      Undergraduate researchers in the Department of Information Technology, Faculty of Computing, Sri Lanka Institute
+      of Information Technology (SLIIT), working under faculty supervision.
     </p>
 
     <!-- Student Research Team (Slide 14 Criteria) -->
@@ -48,69 +80,92 @@
       <div class="researcher-grid">
         <!-- Researcher 1: Weerakoon Y.P.B. -->
         <article class="researcher-card">
+          <img src="img/member_weerakoon.jpg" alt="Weerakoon Y.P.B. - IT22284570" class="researcher-photo">
           <h3>Weerakoon Y.P.B.</h3>
           <div class="researcher-id">Student ID: IT22284570</div>
           <div class="researcher-role">
             Component 03: AR-Supported Task Verification & Instruction
           </div>
           <div class="researcher-tasks">
-            <p><strong>Research & Engineering:</strong> Formulated 3D spatial perspective coordinate projection; developed Jetpack Compose AR Canvas, Android TextToSpeech audio coaching, and the 3-second temporal hold verification loop.</p>
-            <p style="margin: 0;"><strong>Key Outcomes:</strong> Maintained 26&ndash;30 FPS sustained rendering on entry-level Android devices and established a 76.5 System Usability Scale (SUS) score.</p>
+            <p><strong>Research & Engineering:</strong> Formulated 3D spatial perspective coordinate projection;
+              developed Jetpack Compose AR Canvas, Android TextToSpeech audio coaching, and the 3-second temporal hold
+              verification loop.</p>
+            <p style="margin: 0;"><strong>Key Outcomes:</strong> Maintained 26&ndash;30 FPS sustained rendering on
+              entry-level Android devices and established a 76.5 System Usability Scale (SUS) score.</p>
           </div>
           <div class="researcher-contact">
             Email: <a href="mailto:it22284570@my.sliit.lk">it22284570@my.sliit.lk</a><br>
-            <a href="docs/IT22284570_Individual_Thesis_AutoLearnAR.pdf" target="_blank" style="font-size: 0.85rem; font-weight: 600; color: var(--color-primary); display: inline-block; margin-top: 0.4rem;">View Individual Thesis (PDF) &rarr;</a>
+            <a href="docs/IT22284570_Individual_Thesis_AutoLearnAR.pdf" target="_blank"
+              style="font-size: 0.85rem; font-weight: 600; color: var(--color-primary); display: inline-block; margin-top: 0.4rem;">View
+              Individual Thesis (PDF) &rarr;</a>
           </div>
         </article>
 
         <!-- Researcher 2: Jayalath S.P.S.C.K -->
         <article class="researcher-card">
+          <img src="img/member_jayalath.jpg" alt="Jayalath S.P.S.C.K - IT22231864" class="researcher-photo">
           <h3>Jayalath S.P.S.C.K</h3>
           <div class="researcher-id">Student ID: IT22231864</div>
           <div class="researcher-role">
             Component 02: Student Task Recognition Based on Identified Component
           </div>
           <div class="researcher-tasks">
-            <p><strong>Research & Engineering:</strong> Researched repair action tracking; developed the procedural workflow database and action state tracking logic; designed shared navigation routing (<code>AppNavigation.kt</code>).</p>
-            <p style="margin: 0;"><strong>Key Outcomes:</strong> Delivered 100% accurate procedural workflow retrieval and deterministic action transition validation across repair sequences.</p>
+            <p><strong>Research & Engineering:</strong> Researched repair action tracking; developed the procedural
+              workflow database and action state tracking logic; designed shared navigation routing
+              (<code>AppNavigation.kt</code>).</p>
+            <p style="margin: 0;"><strong>Key Outcomes:</strong> Delivered 100% accurate procedural workflow retrieval
+              and deterministic action transition validation across repair sequences.</p>
           </div>
           <div class="researcher-contact">
             Email: <a href="mailto:it22231864@my.sliit.lk">it22231864@my.sliit.lk</a><br>
-            <a href="docs/IT22231864_Individual_Thesis_Jayalath.docx" download style="font-size: 0.85rem; font-weight: 600; color: var(--color-primary); display: inline-block; margin-top: 0.4rem;">Download Individual Thesis (DOCX) &darr;</a>
+            <a href="docs/IT22231864_Individual_Thesis_Jayalath.docx" download
+              style="font-size: 0.85rem; font-weight: 600; color: var(--color-primary); display: inline-block; margin-top: 0.4rem;">Download
+              Individual Thesis (DOCX) &darr;</a>
           </div>
         </article>
 
         <!-- Researcher 3: Senevirathne S.D -->
         <article class="researcher-card">
+          <img src="img/member_senevirathne.jpg" alt="Senevirathne S.D - IT22279934" class="researcher-photo">
           <h3>Senevirathne S.D</h3>
           <div class="researcher-id">Student ID: IT22279934</div>
           <div class="researcher-role">
             Component 01: Vision-Based Engine Component Identification
           </div>
           <div class="researcher-tasks">
-            <p><strong>Research & Engineering:</strong> Researched MobileNetV2 quantization techniques; developed the on-device TFLite and CameraX computer vision pipeline; executed lighting and occlusion edge-case testing.</p>
-            <p style="margin: 0;"><strong>Key Outcomes:</strong> Achieved &gt; 88% mean classification confidence under fluctuating workshop lighting with sub-50ms inference latency.</p>
+            <p><strong>Research & Engineering:</strong> Researched MobileNetV2 quantization techniques; developed the
+              on-device TFLite and CameraX computer vision pipeline; executed lighting and occlusion edge-case testing.
+            </p>
+            <p style="margin: 0;"><strong>Key Outcomes:</strong> Achieved &gt; 88% mean classification confidence under
+              fluctuating workshop lighting with sub-50ms inference latency.</p>
           </div>
           <div class="researcher-contact">
             Email: <a href="mailto:it22279934@my.sliit.lk">it22279934@my.sliit.lk</a><br>
-            <a href="docs/IT22279934_Individual_Thesis_Senevirathne.docx" download style="font-size: 0.85rem; font-weight: 600; color: var(--color-primary); display: inline-block; margin-top: 0.4rem;">Download Individual Thesis (DOCX) &darr;</a>
+            <a href="docs/IT22279934_Individual_Thesis_Senevirathne.docx" download
+              style="font-size: 0.85rem; font-weight: 600; color: var(--color-primary); display: inline-block; margin-top: 0.4rem;">Download
+              Individual Thesis (DOCX) &darr;</a>
           </div>
         </article>
 
         <!-- Researcher 4: Leelananda M.P.D.R.I -->
         <article class="researcher-card">
+          <img src="img/member_leelananda.jpg" alt="Leelananda M.P.D.R.I - IT21804960" class="researcher-photo">
           <h3>Leelananda M.P.D.R.I</h3>
           <div class="researcher-id">Student ID: IT21804960</div>
           <div class="researcher-role">
             Component 04: Practical Evaluation & Safety Feedback
           </div>
           <div class="researcher-tasks">
-            <p><strong>Research & Engineering:</strong> Researched dynamic scoring models and safety logic; developed EvaluationEngine, SafetyData matrices, and JSON telemetry persistence via SharedPreferences.</p>
-            <p style="margin: 0;"><strong>Key Outcomes:</strong> Intercepted 100% of simulated safety hazards with ~120ms response time and demonstrated an 89% score correlation against master instructors.</p>
+            <p><strong>Research & Engineering:</strong> Researched dynamic scoring models and safety logic; developed
+              EvaluationEngine, SafetyData matrices, and JSON telemetry persistence via SharedPreferences.</p>
+            <p style="margin: 0;"><strong>Key Outcomes:</strong> Intercepted 100% of simulated safety hazards with
+              ~120ms response time and demonstrated an 89% score correlation against master instructors.</p>
           </div>
           <div class="researcher-contact">
             Email: <a href="mailto:it21804960@my.sliit.lk">it21804960@my.sliit.lk</a><br>
-            <a href="docs/IT21804960_Individual_Thesis_Leelananda.pdf" target="_blank" style="font-size: 0.85rem; font-weight: 600; color: var(--color-primary); display: inline-block; margin-top: 0.4rem;">View Individual Thesis (PDF) &rarr;</a>
+            <a href="docs/IT21804960_Individual_Thesis_Leelananda.pdf" target="_blank"
+              style="font-size: 0.85rem; font-weight: 600; color: var(--color-primary); display: inline-block; margin-top: 0.4rem;">View
+              Individual Thesis (PDF) &rarr;</a>
           </div>
         </article>
       </div>
@@ -119,14 +174,16 @@
     <!-- Faculty Supervisors & Mentors (Slide 14 Criteria) -->
     <section>
       <h2>Academic Supervisors & Technical Advisors</h2>
-      <p>Research conducted under the academic guidance of faculty members in the Department of Information Technology:</p>
+      <p>Research conducted under the academic guidance of faculty members in the Department of Information Technology:
+      </p>
 
       <div class="supervisor-grid">
         <div class="supervisor-card">
           <h4>Ms. Anjalie Gamage</h4>
           <div class="supervisor-role">Project Supervisor</div>
           <div class="supervisor-affiliation">
-            Senior Lecturer &bull; Department of Information Technology, Faculty of Computing, Sri Lanka Institute of Information Technology (SLIIT).
+            Senior Lecturer &bull; Department of Information Technology, Faculty of Computing, Sri Lanka Institute of
+            Information Technology (SLIIT).
           </div>
         </div>
 
@@ -134,7 +191,8 @@
           <h4>Ms. Uthpala Samarakoon</h4>
           <div class="supervisor-role">Project Co-Supervisor</div>
           <div class="supervisor-affiliation">
-            Lecturer &bull; Department of Information Technology, Faculty of Computing, Sri Lanka Institute of Information Technology (SLIIT).
+            Lecturer &bull; Department of Information Technology, Faculty of Computing, Sri Lanka Institute of
+            Information Technology (SLIIT).
           </div>
         </div>
 
@@ -152,8 +210,11 @@
   <!-- Footer -->
   <footer>
     <p><b>AutoLearnAR</b> &mdash; AR-Based Intelligent Automobile Repair Learning & Evaluation System</p>
-    <p>Department of Information Technology &bull; Faculty of Computing &bull; Sri Lanka Institute of Information Technology (SLIIT) &bull; 2026</p>
-    <p style="font-size: 0.78rem; color: #94a3b8; margin-top: 0.5rem;">Academic Research Deliverable for Comprehensive Design & Analysis Project (CDAP)</p>
+    <p>Department of Information Technology &bull; Faculty of Computing &bull; Sri Lanka Institute of Information
+      Technology (SLIIT) &bull; 2026</p>
+    <p style="font-size: 0.78rem; color: #94a3b8; margin-top: 0.5rem;">Academic Research Deliverable for Comprehensive
+      Design & Analysis Project (CDAP)</p>
   </footer>
 </body>
+
 </html>
